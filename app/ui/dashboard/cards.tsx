@@ -13,7 +13,12 @@ const iconMap = {
   invoices: InboxIcon,
 };
 
-export default async function Cards() {
+export default async function Cards({
+  totalPaidInvoices,
+  totalPendingInvoices,
+  numberOfInvoices,
+  numberOfCustomers,
+}: any) {
   return (
     <>
       {/* NOTE: comment in this code when you get to this point in the course */}
